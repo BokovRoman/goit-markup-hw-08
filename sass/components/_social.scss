@@ -1,0 +1,58 @@
+.social-container {
+  display: flex;
+  justify-content: center;
+}
+
+.team-container .section-list {
+  padding-bottom: 30px;
+  background-color: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $social-icon-color;
+  border-radius: 3%;
+
+  &:hover .client-icon,
+  &:focus .client-icon {
+    fill: $accent-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.client-list {
+  display: flex;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-list > .section-image:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-container {
+  display: flex;
+}
+
+.team-image {
+  margin-bottom: 30px;
+}
+
+.section-list:not(:last-child) {
+  margin-right: 30px;
+}

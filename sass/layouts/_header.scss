@@ -1,0 +1,23 @@
+.header-nav {
+  @extend %FlexGrid;
+}
+
+.header-container {
+  @extend %FlexGrid;
+}
+
+header {
+  border-bottom: 1px solid $header-border-color;
+}
+
+.header-list {
+  @extend %FlexGrid;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header-item > .address {
+  @extend %FlexGrid;
+}
