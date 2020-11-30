@@ -22,11 +22,12 @@
 }
 
 .overlay-text {
+  @include fonts(400, 18px, 1.55, 0.03em);
   padding: 63px 24px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
+  // font-weight: 400;
+  // font-size: 18px;
+  // line-height: 1.55;
+  // letter-spacing: 0.03em;
   color: $white-color;
 }
 

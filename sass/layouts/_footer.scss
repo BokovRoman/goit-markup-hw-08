@@ -4,10 +4,11 @@ footer {
 
 .footer-text {
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include fonts(700, 14px, 1.14, 0.03em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $white-color;
 }
@@ -36,10 +37,11 @@ footer {
 }
 
 .footer {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include fonts(400, 14px, 1.71, 0.03em);
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;
   color: $white-color;
   font-style: normal;
 }
@@ -74,11 +76,12 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 27px 82px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include fonts(700, 14px, 1.14, 0.03em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // text-align: center;
+  // letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $white-color;
   margin-bottom: 0;
