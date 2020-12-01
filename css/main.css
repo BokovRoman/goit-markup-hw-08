@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.site-nav, .footer-link, .form-checkbox, .header-nav, .header-container, .header-list, .header-item > .address {
+.footer-link, .form-checkbox, .header-nav, .header-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,6 +90,8 @@ body {
 }
 
 .site-nav {
+  display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
@@ -753,8 +755,18 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
 .header-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.header-item > .address {
+  display: flex;
+  align-items: center;
 }
 
 .social-container {

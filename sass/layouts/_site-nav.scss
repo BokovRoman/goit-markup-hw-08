@@ -8,7 +8,8 @@
 }
 
 .site-nav {
-  @extend %FlexGrid;
+  display: flex;
+  align-items: center;
   margin-left: auto;
 
   & .current::after {

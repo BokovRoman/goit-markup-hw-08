@@ -11,7 +11,8 @@ header {
 }
 
 .header-list {
-  @extend %FlexGrid;
+  display: flex;
+  align-items: center;
 }
 
 .header-item:not(:last-child) {
@@ -19,5 +20,6 @@ header {
 }
 
 .header-item > .address {
-  @extend %FlexGrid;
+  display: flex;
+  align-items: center;
 }
