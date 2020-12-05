@@ -7,6 +7,10 @@
   // letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $title-text-color;
+
+  @include for-size(mobile-only) {
+    text-align: center;
+  }
 }
 
 .features-text {
@@ -19,18 +23,50 @@
 }
 
 .features-list {
-  display: flex;
-}
-
-.features-container {
-  padding-top: 94px;
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .features-item {
-  width: 270px;
+  width: 100%;
+
+  @include for-size(mobile) {
+    width: 450px;
+  }
 
   &:not(:last-child) {
-    margin-right: 30px;
+    @include for-size(mobile-only) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &:nth-child(-n + 2) {
+    @include for-size(tablet-only) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include for-size(tablet) {
+    width: 354px;
+  }
+
+  @include for-size(desktop) {
+    width: 270px;
+    margin-bottom: 0;
+  }
+
+  &:not(:last-child) {
+    @include for-size(desktop) {
+      margin-right: 30px;
+    }
+  }
+
+  &:nth-child(2n + 1) {
+    @include for-size(tablet) {
+      margin-right: 30px;
+    }
   }
 
   &::before {
