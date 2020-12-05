@@ -177,11 +177,13 @@
           <div class="team-container">
             <ul class="section-list">
               <li>
-                  <img class="team-image"
-                    src="./images/logo_ihor.jpg"
-                    width="270"
-                    alt="Фото Игоря"
-                  />
+                  <picture>
+                    <source srcset="./images/logo_ihor.jpg 1x, ./images/logo_ihor@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/tablet/logo_ihor.jpg 1x, ./images/tablet/logo_ihor@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/mobile/logo_ihor.jpg 1x, ./images/mobile/logo_ihor@2x.jpg 2x" media="(min-width: 480px)" />
+                    <img class="team-image" src="./images/logo_ihor.jpg"  alt="Фото Игоря" />
+                  </picture>
+                  
                   <h3 class="name-title">Игорь Демьяненко</h3>
                   <p class="position-title" lang="en">Product Designer</p>
               </li>
@@ -222,11 +224,17 @@
             </ul>
             <ul class="section-list">
               <li>
-                <img class="team-image"
+                <picture>
+                  <source srcset="./images/logo_olya.jpg 1x, ./images/logo_olya@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet/logo_olya.jpg 1x, ./images/tablet/logo_olya@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/mobile/logo_olya.jpg 1x, ./images/mobile/logo_olya@2x.jpg 2x" media="(min-width: 480px)" />
+                <img class="team-image" src="./images/logo_olya.jpg" alt="Фото Ольги" />
+                </picture>
+                <!-- <img class="team-image"
                   src="./images/logo_olya.jpg"
                   width="270"
                   alt="Фото Ольги"
-                />
+                /> -->
                 <h3 class="name-title">Ольга Репина</h3>
                 <p class="position-title" lang="en">Frontend Developer</p>
               </li>
@@ -267,11 +275,18 @@
             </ul>
             <ul class="section-list">
               <li>
-                <img class="team-image"
+                <picture>
+                  <source srcset="./images/logo_nikolay.jpg 1x, ./images/logo_nikolay@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet/logo_nikolay.jpg 1x, ./images/tablet/logo_nikolay@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/mobile/logo_nikolay.jpg 1x, ./images/mobile/logo_nikolay@2x.jpg 2x" media="(min-width: 480px)" />
+                  <img class="team-image" src="./images/logo_nikolay.jpg" alt="Фото Николая" />
+                </picture>
+
+                <!-- <img class="team-image"
                   src="./images/logo_nikolay.jpg"
                   width="270"
                   alt="Фото Николая"
-                />
+                /> -->
                 <h3 class="name-title">Николай Тарасов</h3>
                 <p class="position-title" lang="en">Marketing</p>
               </li>
@@ -312,11 +327,19 @@
             </ul>
             <ul class="section-list">
               <li>
-                <img class="team-image"
+                <picture>
+                  <source srcset="./images/logo_mihaylo.jpg 1x, ./images/logo_mihaylo@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet/logo_mihaylo.jpg 1x, ./images/tablet/logo_mihaylo@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+                  <source srcset="./images/mobile/logo_mihaylo.jpg 1x, ./images/mobile/logo_mihaylo@2x.jpg 2x"
+                    media="(min-width: 480px)" />
+                  <img class="team-image" src="./images/logo_mihaylo.jpg"  alt="Фото Михаила" />
+                </picture>
+                <!-- <img class="team-image"
                   src="./images/logo_mihaylo.jpg"
                   width="270"
                   alt="Фото Михаила"
-                />
+                /> -->
                 <h3 class="name-title">Михаил Ермаков</h3>
                 <p class="position-title" lang="en">UI Designer</p>
               </li>

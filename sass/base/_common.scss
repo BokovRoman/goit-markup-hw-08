@@ -86,14 +86,23 @@ img {
 }
 
 .container-size {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-.section-title {
-  margin-bottom: 50px;
+  @include for-size(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list-flex {
   display: flex;
+}
+
+.section {
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+  }
 }
