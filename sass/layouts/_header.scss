@@ -24,12 +24,16 @@ header {
 }
 
 .header-list {
-  display: flex;
-  align-items: center;
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header-item:not(:last-child) {
-  margin-right: 30px;
+  @include for-size(desktop) {
+    margin-right: 30px;
+  }
 }
 
 .header-item > .address {
