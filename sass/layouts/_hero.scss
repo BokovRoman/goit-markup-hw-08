@@ -26,11 +26,11 @@
       url(../../images/mobile/hero@2x.png);
   }
 
-  @include for-size(mobile) {
+  @include for-size(mobile-only) {
     width: 480px;
   }
 
-  @include for-size(tablet) {
+  @include for-size(tablet-only) {
     width: 768px;
 
     background-image: linear-gradient(
@@ -57,7 +57,7 @@
   @include for-size(desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
-    width: 1200px;
+    // width: 1200px;
     max-width: 1600px;
     background-image: linear-gradient(
         to right,

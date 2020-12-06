@@ -196,11 +196,18 @@ body {
 .logo {
   color: #212121;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   font-family: "Raleway", sans-serif;
   color: #2196f3;
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-header {
@@ -222,7 +229,23 @@ footer .link.logo {
 }
 
 footer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   background: #2f303a;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  footer {
+    width: 768px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    width: 480px;
+    text-align: center;
+  }
 }
 
 .footer-text {
@@ -252,8 +275,30 @@ footer {
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .footer-list {
+    justify-content: center;
+  }
+}
+
 .footer-contact {
-  margin-right: 70px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer-contact {
+    margin-left: 61px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-contact {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .footer {
@@ -270,10 +315,21 @@ footer {
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .link-footer {
@@ -303,6 +359,21 @@ footer {
   color: #ffffff;
   margin-bottom: 0;
   background: rgba(47, 48, 58, 0.8);
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer-icon {
+    position: absolute;
+    top: 60px;
+    right: 74px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-icon {
+    margin-bottom: 60px;
+  }
 }
 
 .modal {
@@ -352,20 +423,20 @@ footer {
   }
 }
 
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .hero-container {
     width: 480px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .hero-container {
     width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/hero.png);
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero-container {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/hero@2x.png);
   }
@@ -375,7 +446,6 @@ footer {
   .hero-container {
     padding-top: 200px;
     padding-bottom: 200px;
-    width: 1200px;
     max-width: 1600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero.jpg);
   }
@@ -805,7 +875,7 @@ footer {
 }
 
 .email-input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -817,6 +887,21 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
   margin-right: 12px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  .email-input {
+    width: 358px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .email-input {
+    display: block;
+    margin-left: 151px;
+  }
 }
 
 .email-input:-webkit-autofill,
@@ -828,6 +913,12 @@ footer {
 
 .footer-form {
   margin-left: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer-form {
+    text-align: center;
+  }
 }
 
 .envelope-icon {

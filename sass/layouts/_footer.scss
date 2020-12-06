@@ -1,5 +1,16 @@
 footer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   background: $hero-footer-color;
+
+  @include for-size(tablet-only) {
+    width: 768px;
+  }
+  @include for-size(mobile-only) {
+    width: 480px;
+    text-align: center;
+  }
 }
 
 .footer-text {
@@ -30,10 +41,26 @@ footer {
 
 .footer-list {
   display: flex;
+
+  @include for-size(mobile-only) {
+    justify-content: center;
+  }
 }
 
 .footer-contact {
-  margin-right: 70px;
+  margin-bottom: 60px;
+
+  @include for-size(tablet-only) {
+    margin-left: 61px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @include for-size(desktop) {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .footer {
@@ -51,10 +78,17 @@ footer {
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @include for-size(tablet-only) {
+    position: relative;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .link-footer {
@@ -86,4 +120,17 @@ footer {
   color: $white-color;
   margin-bottom: 0;
   background: rgba(47, 48, 58, 0.8);
+}
+
+.footer-icon {
+  @include for-size(tablet-only) {
+    position: absolute;
+    top: 60px;
+    right: 74px;
+    text-align: center;
+  }
+
+  @include for-size(mobile-only) {
+    margin-bottom: 60px;
+  }
 }
