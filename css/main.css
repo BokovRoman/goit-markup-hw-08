@@ -549,12 +549,41 @@ footer {
 
 .button-works {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .button-works {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .button-works {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .button-works {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .button-works {
+    margin-bottom: 50px;
+  }
 }
 
 .button-item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media (max-width: 767px) {
+  .button-item:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
 }
 
 .features-title {
