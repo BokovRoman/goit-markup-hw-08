@@ -32,20 +32,50 @@
 }
 
 .grid-list {
-  display: flex;
-  flex-wrap: wrap;
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .grid-item {
-  flex-basis: calc((100% - 60px) / 3);
-  border: 1px solid $header-border-color;
-
-  &:not(:nth-child(3n)) {
-    margin-right: 30px;
+  @include for-size(tablet-only) {
+    flex-basis: calc((100% - 30px) / 2);
   }
 
+  @include for-size(desktop) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  border: 1px solid $header-border-color;
+
+  &:not(:nth-child(2n)) {
+    @include for-size(tablet-only) {
+      margin-right: 30px;
+    }
+  }
+
+  &:not(:nth-last-child(-n + 1)) {
+    @include for-size(tablet-only) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &:not(:nth-child(3n)) {
+    @include for-size(desktop) {
+      margin-right: 30px;
+    }
+  }
   &:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 30px;
+    @include for-size(desktop) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &:not(:last-child) {
+    @include for-size(mobile-only) {
+      margin-bottom: 30px;
+    }
   }
 
   & > .link {
