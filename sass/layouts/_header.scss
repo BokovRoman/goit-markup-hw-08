@@ -1,9 +1,22 @@
 .header-nav {
-  @extend %FlexGrid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  @include for-size(tablet) {
+    justify-content: center;
+    flex-grow: 0;
+  }
 }
 
 .header-container {
-  @extend %FlexGrid;
+  align-items: center;
+
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 header {
@@ -22,4 +35,38 @@ header {
 .header-item > .address {
   display: flex;
   align-items: center;
+}
+
+.mobile-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  width: 480px;
+  text-align: center;
+  background-color: $white-color;
+  opacity: 0;
+  visibility: hidden;
+
+  @include for-size(tablet) {
+    display: none;
+  }
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mobile-site-nav {
+  margin-bottom: 60px;
+}
+
+.mobile-header-item:not(:last-child) {
+  margin-bottom: 16px;
 }
