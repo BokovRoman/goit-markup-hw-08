@@ -109,6 +109,13 @@
     border: 0;
     background-color: transparent;
   }
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    cursor: pointer;
+    outline: none;
+  }
 }
 
 .mobile-menu-btn .icon-close {
@@ -121,4 +128,8 @@
 
 .mobile-menu-btn.is-open .icon-open {
   display: none;
+}
+
+.mobile-menu-btn.is-open:hover {
+  fill: $accent-color;
 }

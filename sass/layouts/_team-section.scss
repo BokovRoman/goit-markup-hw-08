@@ -61,3 +61,15 @@
     padding-bottom: 30px;
   }
 }
+
+.team-container .section-list:not(:last-child) {
+  @include for-size(mobile-only) {
+    margin-bottom: 30px;
+  }
+}
+
+.team-container .section-list:nth-child(-n + 2) {
+  @include for-size(tablet-only) {
+    margin-bottom: 30px;
+  }
+}
