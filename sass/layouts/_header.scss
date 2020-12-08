@@ -61,7 +61,7 @@ header {
 }
 
 .mobile-site-nav .link {
-  display: block;
+  display: inline-block;
   color: $title-text-color;
   @include fonts(500, 18px, 1.14, 0.02em);
 }
