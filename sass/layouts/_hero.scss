@@ -12,6 +12,7 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/mobile/hero.png);
+  background-size: cover;
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
@@ -27,11 +28,11 @@
   }
 
   @include for-size(mobile-only) {
-    width: 480px;
+    width: 100%;
   }
 
   @include for-size(tablet-only) {
-    width: 768px;
+    width: 100%;
 
     background-image: linear-gradient(
         to right,
