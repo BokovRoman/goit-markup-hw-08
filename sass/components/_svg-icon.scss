@@ -110,8 +110,8 @@
     background-color: transparent;
   }
 
-  &:hover,
-  &:focus {
+  &:hover svg,
+  &:focus svg {
     fill: $accent-color;
     cursor: pointer;
     outline: none;
