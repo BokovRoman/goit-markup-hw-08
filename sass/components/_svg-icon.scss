@@ -110,8 +110,10 @@
     background-color: transparent;
   }
 
-  &:hover svg,
-  &:focus svg {
+  &:hover .icon-close,
+  &:focus .icon-close,
+  &:hover .icon-open,
+  &:focus .icon-open {
     fill: $accent-color;
     cursor: pointer;
     outline: none;

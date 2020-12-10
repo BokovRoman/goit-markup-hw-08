@@ -1142,8 +1142,10 @@ button:focus > .icon-close {
   }
 }
 
-.mobile-menu-btn:hover svg,
-.mobile-menu-btn:focus svg {
+.mobile-menu-btn:hover .icon-close,
+.mobile-menu-btn:focus .icon-close,
+.mobile-menu-btn:hover .icon-open,
+.mobile-menu-btn:focus .icon-open {
   fill: #2196f3;
   cursor: pointer;
   outline: none;
